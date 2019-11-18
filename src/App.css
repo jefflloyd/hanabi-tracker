@@ -1,22 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #09d3ac;
+.welcome-message {
+  font-size: 24px;
+}
+
+.player-select, .game-type-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.player-select-options, .game-type-select-options {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.player-select-option, .game-type-select-option {
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.player-select-option--selected, .game-type-select-option--selected {
+  background-color: rgb(121, 184, 250);
+}
+
+.game-start {
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  background-color: rgb(47, 255, 64);
+  margin-bottom: 100px;
 }

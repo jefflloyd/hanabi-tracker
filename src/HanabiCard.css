@@ -1,0 +1,83 @@
+.hanabi-card {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.hanabi-card:last-child {
+  border-bottom: none;
+}
+
+.rank-and-color-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.rank-container, .color-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.other-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rank-item, .color-item {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 15px;
+  background-color: rgb(177, 177, 177);
+  opacity: 0.2;
+}
+
+.remove-card {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.card-number {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.rank-item--selected, .color-item--selected {
+  opacity: 1;
+}
+
+.rank-item--selected {
+  background-color: rgb(121, 184, 250);
+}
+
+.color-item--selected[data-color="R"] {
+  background-color: rgb(255, 115, 115);
+}
+
+.color-item--selected[data-color="Y"] {
+  background-color: rgb(255, 246, 117);
+}
+
+.color-item--selected[data-color="G"] {
+  background-color: rgb(122, 255, 127);
+}
+
+.color-item--selected[data-color="B"] {
+  background-color: rgb(100, 111, 255);
+}
+
+.color-item--selected[data-color="W"] {
+  background-color: rgb(255, 255, 255);
+}
+
+.color-item--selected[data-color="M"] {
+  background-image: linear-gradient(to right, rgb(255, 115, 115), rgb(255, 246, 117), rgb(122, 255, 127), rgb(100, 111, 255), rgb(255, 255, 255));
+}
